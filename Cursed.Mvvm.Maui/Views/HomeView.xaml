@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<views.Base:BaseView
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:viewModels="clr-namespace:Cursed.Mvvm.Maui.ViewModels"
+    xmlns:views.Base="clr-namespace:Cursed.Mvvm.Maui.Views.Base"
+    x:Class="Cursed.Mvvm.Maui.Views.HomeView"
+    x:DataType="viewModels:HomeViewModel"
+    Title="Home">
+
+    <VerticalStackLayout
+        Padding="20"
+        Spacing="20">
+        
+        <Button
+            Text="Open detail"
+            Command="{Binding OpenDetailCommand}" />
+        
+        <Button
+            Text="Open modal"
+            Command="{Binding OpenModalCommand}" />
+        
+    </VerticalStackLayout>
+
+</views.Base:BaseView>

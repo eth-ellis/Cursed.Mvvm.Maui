@@ -3,13 +3,22 @@
     x:Class="Cursed.Mvvm.Maui.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:Cursed.Mvvm.Maui"
-    Shell.FlyoutBehavior="Flyout"
-    Title="Cursed.Mvvm.Maui">
+    xmlns:views="clr-namespace:Cursed.Mvvm.Maui.Views">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <TabBar>
+        
+        <ShellContent
+            Title="Tab 1"
+            ContentTemplate="{DataTemplate views:HomeView}" />
+    
+        <ShellContent
+            Title="Tab 2"
+            ContentTemplate="{DataTemplate views:HomeView}" />
+    
+        <ShellContent
+            Title="Tab 3"
+            ContentTemplate="{DataTemplate views:HomeView}" />
+        
+    </TabBar>
 
 </Shell>
