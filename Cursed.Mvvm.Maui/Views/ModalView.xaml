@@ -7,7 +7,6 @@
     xmlns:views.Base="clr-namespace:Cursed.Mvvm.Maui.Views.Base"
     x:Class="Cursed.Mvvm.Maui.Views.ModalView"
     x:DataType="viewModels:ModalViewModel"
-    Shell.PresentationMode="ModalAnimated"
     ios:Page.ModalPresentationStyle="PageSheet"
     Title="Modal">
 

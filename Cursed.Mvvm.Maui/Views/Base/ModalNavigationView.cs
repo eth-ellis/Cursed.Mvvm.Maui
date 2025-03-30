@@ -1,6 +1,8 @@
-using Cursed.Mvvm.Maui.Views.Base;
+using Microsoft.Maui.Controls.PlatformConfiguration;
+using Microsoft.Maui.Controls.PlatformConfiguration.iOSSpecific;
+using NavigationPage = Microsoft.Maui.Controls.NavigationPage;
 
-namespace Cursed.Mvvm.Maui.ViewModels.Base;
+namespace Cursed.Mvvm.Maui.Views.Base;
 
 public class ModalNavigationView<TView> : NavigationPage, IQueryAttributable
     where TView : BaseView
@@ -12,6 +14,8 @@ public class ModalNavigationView<TView> : NavigationPage, IQueryAttributable
         this.view = view;
         
         Shell.SetPresentationMode(this, PresentationMode.ModalAnimated);
+
+        this.On<iOS>().SetModalPresentationStyle(view.On<iOS>().ModalPresentationStyle());
     }
 
     public void ApplyQueryAttributes(IDictionary<string, object> query)

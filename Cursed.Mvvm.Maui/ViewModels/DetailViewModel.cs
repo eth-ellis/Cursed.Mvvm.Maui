@@ -57,4 +57,13 @@ public partial class DetailViewModel : BaseViewModel, IQueryAttributable
             { "Debug", "From Detail" }
         });
     }
+    
+    [RelayCommand]
+    private async Task GoBack()
+    {
+        await this.navigationService.GoBackAsync(new Dictionary<string, object>
+        {
+            { "Debug", "From Detail" }
+        });;
+    }
 }

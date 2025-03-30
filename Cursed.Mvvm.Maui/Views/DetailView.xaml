@@ -20,6 +20,10 @@
             Text="Open modal"
             Command="{Binding OpenModalCommand}" />
         
+        <Button
+            Text="Go back"
+            Command="{Binding GoBackCommand}" />
+        
     </VerticalStackLayout>
 
 </views.Base:BaseView>

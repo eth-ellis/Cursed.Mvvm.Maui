@@ -2,7 +2,7 @@ using Microsoft.Maui.Handlers;
 using JavaObject = Java.Lang.Object;
 using View = Android.Views.View;
 
-namespace Cursed.Mvvm.Maui.Platforms.Android.Handlers;
+namespace Cursed.Mvvm.Maui.Handlers;
 
 public class CustomToolbarHandler : ToolbarHandler
 {

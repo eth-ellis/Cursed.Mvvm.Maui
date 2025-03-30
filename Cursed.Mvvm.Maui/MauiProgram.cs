@@ -5,7 +5,7 @@ using Cursed.Mvvm.Maui.ViewModels;
 using Cursed.Mvvm.Maui.Views;
 
 #if ANDROID
-using Cursed.Mvvm.Maui.Platforms.Android.Handlers;
+using Cursed.Mvvm.Maui.Handlers;
 #endif
 
 namespace Cursed.Mvvm.Maui;
